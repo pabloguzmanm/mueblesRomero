@@ -64,7 +64,10 @@ export const ProductGrid = ({ products }: ProductGridProps) => {
 									<span className='text-xs text-muted-foreground uppercase tracking-wider'>
 										{product.category}
 									</span>
-									<h3 className='text-lg font-semibold text-foreground mt-1'>
+									<h3
+										className='text-lg font-semibold text-foreground mt-1 truncate'
+										title={product.title}
+									>
 										{product.title}
 									</h3>
 									<p className='text-2xl font-bold text-primary mt-2'>
